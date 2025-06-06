@@ -38,7 +38,7 @@ header .brandName {
   z-index: 1;
   text-align: center;
   white-space: nowrap;
-  -webkit-text-stroke: 0.3px #D5291A;
+  
 
 }
 
@@ -354,3 +354,7 @@ footer {
     height: auto;
     color: #171515;
 }*/
+html, body {
+  overflow-x: hidden;
+}
+
