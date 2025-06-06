@@ -1,0 +1,96 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.6;
+  color: #0A1D37; /* Dark Blue text */
+  background-color: #eff1f4;
+
+}
+
+h1, h2 {
+  color: #D5291A; /* Brand red */
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+#abtKing {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #0A1D37; /* subtle stroke for style */
+}
+
+h2 {
+  font-size: 1.8rem;
+  border-bottom: 3px solid #D5291A;
+  padding-bottom: 0.25rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #333333;
+  text-align: justify;
+}
+
+address {
+  font-style: normal;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  color: #0A1D37;
+  margin-top: 0.5rem;
+}
+
+a {
+  color: #D5291A;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  body {
+    margin: 20px 15px;
+    padding: 0 10px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  p, address {
+    font-size: 1rem;
+  }
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background-image: url('images/logo.png'); /* replace with your actual path */
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.2; /* light watermark */
+  z-index: 0;
+  pointer-events: none;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+}
