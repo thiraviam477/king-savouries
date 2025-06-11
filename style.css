@@ -201,11 +201,11 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 780px) {
-  .banner-text {
-    font-size: 15px;
-  }
   .banner button {
     font-size: 14px;
+  }
+  .banner-text h2{
+    font-size: 1rem;
   }
   
 
