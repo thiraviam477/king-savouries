@@ -9,7 +9,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #eff1f4;
-    overflow-x: hidden;
+    
     padding-top: 60px; 
 }
 
@@ -25,21 +25,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   height: 60px;
-  overflow: hidden; /* This hides the overflowed (cropped) part of the image */
+  /* This hides the overflowed (cropped) part of the image */
 }
 
 header .brandName {
-  color: #FFFFFF;
-  position: absolute;
+    position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
-  text-align: center;
-  white-space: nowrap;
-  
-
+  color: #FFFFFF;
+  font-weight: bold;
 }
 
 header .logo {
@@ -66,22 +61,27 @@ header nav ul li a {
     text-decoration: none;
     -webkit-text-stroke: 0.2px #D5291A;
 }
+header nav ul li a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.3px; /* Adjust thickness as needed */
+}
 
 
 .menu-toggle {
   display: none; /* Hidden by default */
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
-  height: 22px;
+  width: 45px;
+  height: 30px;
   cursor: pointer;
 }
 
 .menu-toggle span {
   display: block;
-  height: 4px;
+  height: 6px;
+  
   background-color:#FFFFFF;
-  box-shadow: 0 0 0 0.3px #D5291A;
+  box-shadow: 0 0 0 0.4px #D5291A;
   border-radius: 2px;
 }
 
@@ -103,7 +103,7 @@ header nav ul li a {
   position: fixed;
   top: 60px; /* below header */
   right: 0;
-  width: 200px;
+  width: 250px;
   height: calc(100vh - 60px); /* full height minus header */
   background: linear-gradient(to bottom, #0A1D37, #D5291A);
   color: white;
@@ -214,7 +214,7 @@ header nav ul li a {
 
 @media (max-width: 550px) {
   .banner-text {
-    font-size: 12px;
+    font-size: 10px;
   }
   .banner button {
     font-size: 12px;
